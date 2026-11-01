@@ -1,0 +1,18 @@
+# 运行时数据：含学生姓名、家庭情况、家长电话，绝不能入库
+data/
+
+# 数据备份与旧版 index 备份
+backups/
+
+# 运行日志
+service.log
+*.log
+
+# 分发包
+*.zip
+
+# 依赖与系统垃圾
+node_modules/
+Thumbs.db
+desktop.ini
+.DS_Store

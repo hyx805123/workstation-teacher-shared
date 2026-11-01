@@ -1,0 +1,13 @@
+# 统一换行符：Windows 脚本必须 CRLF，避免 clone 后双击无反应
+*.bat  text eol=crlf
+*.vbs  text eol=crlf
+
+# 源码与文档统一 LF
+*.js   text eol=lf
+*.md   text eol=lf
+*.json text eol=lf
+
+# 二进制
+*.png  binary
+*.jpg  binary
+*.zip  binary
