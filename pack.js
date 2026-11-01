@@ -30,6 +30,8 @@ if (!fs.existsSync(TAR)) {
 if (fs.existsSync(outFile)) fs.unlinkSync(outFile);
 
 const args = ['-a', '-c', '-f', outFile,
+  '--exclude', DIR_NAME + '/.git',
+  '--exclude', DIR_NAME + '/.git/*',
   '--exclude', DIR_NAME + '/backups/*',
   '--exclude', DIR_NAME + '/service.log',
   '--exclude', DIR_NAME + '/*.zip',
